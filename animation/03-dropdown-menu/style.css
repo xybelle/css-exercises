@@ -29,4 +29,19 @@ ul.dropdown-menu li:hover {
   display: block;
 }
 
+/* Solution */
+@keyframes bounce {
+  0% {line-height: 0px;}
+  25% {line-height: 10px;}
+  50% {line-height: 20px;}
+  75% {line-height: 30px;}
+  80% {line-height: 40px;}
+  90% {line-height: 50px;}
+  95% {line-height: 60px;}
+  100% {line-height: 50px;}
+}
 
+.dropdown-menu {
+  animation-name: bounce;
+  animation-duration: 100ms;
+}
