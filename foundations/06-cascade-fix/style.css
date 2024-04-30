@@ -5,19 +5,14 @@ body {
 .para,
 .small-para {
   color: hsl(0, 0%, 0%);
-  font-weight: 800;
-}
-
-.small-para {
-  font-size: 14px;
-  font-weight: 800;
+  font-weight: 1000;  /* Extra bold */
 }
 
 .para {
-  font-size: 22px;
+  font-size: 32px; /* Changed from 22px to 32px */
 }
 
-.confirm {
+#confirm-button {  /* Changed from .confirm to #confirm-button (ID selector)  */
   background: green;
   color: white;
   font-weight: bold;
@@ -26,7 +21,7 @@ body {
 .button {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
-  font-size: 20px;
+  font-size: 25px; /* Changed from 20px to 25px */
 }
 
 .child {
@@ -37,6 +32,22 @@ body {
 
 div.text {
   color: rgb(0, 0, 0);
-  font-size: 22px;
+  font-size: 25px;  /* Changed from 22px to 25px */
   font-weight: 100;
+}
+
+/* The rest of solution */
+
+.small-para {
+  font-size: 14px;
+  font-size: 20px;
+}
+
+.text .child {
+  font-size: 14px;
+  font-weight: 1000;
+}
+
+.para, .text.child {
+  letter-spacing: 2px;
 }
